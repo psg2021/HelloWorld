@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/messageItem_linearLayout_main">
+
+    <LinearLayout
+            android:id="@+id/messageItem_linearLayout_destination"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/messageItem_imageview_profile"
+                android:src="@drawable/baseline_people_black_18dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="50dp"
+                android:layout_height="50dp"/>
+        <TextView
+                android:id="@+id/messageItem_textview_nickname"
+                android:layout_gravity="center_horizontal"
+                android:text="닉네임"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <TextView
+                android:id="@+id/messageItem_textView_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        <ImageView
+                android:src="@drawable/baseline_control_point_black_24dp"
+                android:id="@+id/messgeItem_imageview_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>
